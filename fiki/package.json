@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --output-path ../docs --base-href dutualincalin.github.io/EcoCorp"
+    "deploy": "ng build --output-path ../docs --base-href https://dutualincalin.github.io/EcoCorp/"
   },
   "private": true,
   "dependencies": {
