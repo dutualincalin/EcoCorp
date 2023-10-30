@@ -1,0 +1,28 @@
+#team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 98.5725vw;
+  height: 120vh;
+  padding-top: 10vh;
+}
+
+#card-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+#card-container p-card {
+  padding: 4.5vw;
+}
+
+#card-container p-card img {
+  height: 40vh;
+  width: 100%;
+}
