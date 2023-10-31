@@ -3,18 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative;
-  width: 98.5725vw;
-  height: 120vh;
-  padding-top: 10vh;
+  max-width: 98.5725vw;
+  max-height: 500vmax;
+  margin-bottom: 10vh;
 }
 
 #card-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -23,6 +23,7 @@
 }
 
 #card-container p-card img {
-  height: 40vh;
-  width: 100%;
+  min-height: 40vmin;
+  max-height: 40vmax;
+  max-width: 100vmin;
 }

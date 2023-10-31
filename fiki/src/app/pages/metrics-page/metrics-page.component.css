@@ -1,23 +1,23 @@
 #metrics-container{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   position: relative;
-  width: 98.5725vw;
-  height: 100vh;
-  margin-top: 5vh;
+  max-width: 98.5725vw;
+  max-height: 500vh;
+  margin-bottom: 15vmax;
 }
 
 img {
-  height: 70vh;
-  width: 50vw;
+  max-height: 80vh;
+  max-width: 40vw;
 }
 
 #metrics-writing {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   position: relative;
@@ -28,14 +28,15 @@ img {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 50vw;
+  max-width: 50vw;
+  margin-left: 5vw;
 }
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
-  font-size: 20px;
+  font-size: 1.25vmax;
 }
 
 tr:nth-child(even) {
