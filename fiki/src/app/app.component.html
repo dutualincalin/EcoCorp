@@ -13,19 +13,23 @@
     <p>EcoCorp MarketPlace</p>
   </div>
   <div class="p-toolbar-group-end">
-    <a href="https://www.freepik.com/">Freepik</a>
+    <p>
+      Images provided by
+      <a href="https://www.freepik.com/">Freepik</a>
+    </p>
   </div>
 </p-toolbar>
 
 <p-sidebar [(visible)]="this.sidebar" position="left">
   <h3>EcoCorp<br>Marketplace</h3>
-  <p>
-    Introduction<br>
-    Meet the team<br>
-    Problems and solutions<br>
-    Competitors and our advantages<br>
-    Metrics<br>
-    Cost and Revenue
-  </p>
-
+    <ng-container *ngFor="let chapter of this.sidebarReferences">
+      <p-button
+        label="{{chapter.id}}.{{chapter.name}}"
+        [rounded]="true"
+        [text]="true"
+        (onClick)="this.navigateToSection(chapter.reference)"
+        severity="info">
+      </p-button>
+      <br>
+    </ng-container>
 </p-sidebar>
