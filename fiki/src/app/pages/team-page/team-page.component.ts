@@ -25,6 +25,18 @@ export class TeamPageComponent {
       "Software Tester",
       "matei.iordache21@gmail.com",
       "assets/Tester.jpg"
-    )
+    ),
+    new Person(
+      "Matei Bianca",
+      "Software Developer",
+      "mateibiancae@gmail.com",
+      "assets/Developer.jpg"
+    ),
+    new Person(
+      "Buiciuc Ana-Maria",
+      "Software Tester",
+      "ana_maria.buiciuc@stud.acs.upb.ro",
+      "assets/Tester.jpg"
+    ),
   ];
 }
