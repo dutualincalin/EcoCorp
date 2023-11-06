@@ -1,6 +1,6 @@
 export class Person {
   constructor(
-    private _name:string,
+    private _name: string,
     private _function: string,
     private _contact: string,
     private _imageUrl: string

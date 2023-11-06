@@ -14,6 +14,10 @@ import {CostRevenuePageComponent} from "./pages/cost-revenue-page/cost-revenue-p
 import {ToolbarModule} from "primeng/toolbar";
 import {SidebarModule} from "primeng/sidebar";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { InterviewPageComponent } from './pages/interview-page/interview-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import {ChartModule} from "primeng/chart";
+import {FieldsetModule} from "primeng/fieldset";
 
 @NgModule({
   declarations: [
@@ -23,7 +27,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     ProblemSolutionPageComponent,
     CompetitionPageComponent,
     MetricsPageComponent,
-    CostRevenuePageComponent
+    CostRevenuePageComponent,
+    InterviewPageComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -32,7 +37,10 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     NgOptimizedImage,
     CardModule,
     ToolbarModule,
-    SidebarModule
+    SidebarModule,
+    HttpClientModule,
+    ChartModule,
+    FieldsetModule
   ],
   providers: [],
   bootstrap: [AppComponent]
