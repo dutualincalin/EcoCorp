@@ -17,8 +17,4 @@ export class QA {
   get answer(): string {
     return this._answer;
   }
-
-  set answer(value: string) {
-    this._answer = value;
-  }
 }
