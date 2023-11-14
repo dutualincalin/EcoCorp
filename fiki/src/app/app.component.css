@@ -3,7 +3,11 @@
   z-index: 1000;
 }
 
-::ng-deep p-toolbar > div {
+.highlight {
+  background-color: aqua;
+}
+
+::ng-deep #footer-toolbar > div {
   margin-top: 10vh;
   background-color: rgb(166, 214, 230) !important;
   padding: 0 1vw;

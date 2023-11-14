@@ -1,4 +1,4 @@
-import {AfterViewInit, Component} from '@angular/core';
+import {AfterViewChecked, AfterViewInit, Component} from '@angular/core';
 import {ReferenceObject} from "./model/ReferenceObject";
 
 
@@ -10,7 +10,6 @@ import {ReferenceObject} from "./model/ReferenceObject";
 export class AppComponent implements AfterViewInit{
   sidebar: boolean = false
   sidebarReferences: ReferenceObject[] = []
-
 
   ngAfterViewInit(): void {
     this.sidebarReferences.push(

@@ -1,4 +1,12 @@
-<p-button id="option-button" (onClick)="switchSidebar()" icon="pi pi-bars" [rounded]="true" [text]="true" [raised]="true"></p-button>
+<p-button
+  id="option-button"
+  (onClick)="switchSidebar()"
+  icon="pi pi-bars"
+  [rounded]="true"
+  [text]="true"
+  [raised]="true"
+  severity="success"
+></p-button>
 
 <app-intro-page></app-intro-page>
 <app-team-page></app-team-page>
@@ -8,7 +16,7 @@
 <app-cost-revenue-page></app-cost-revenue-page>
 <app-interview-page></app-interview-page>
 
-<p-toolbar>
+<p-toolbar id="footer-toolbar">
   <div class="p-toolbar-group-start">
     <img src="assets/Icon.png" height="30" width="30">
     <p>EcoCorp MarketPlace</p>
@@ -22,14 +30,14 @@
 </p-toolbar>
 
 <p-sidebar [(visible)]="this.sidebar" position="left">
-  <h3>EcoCorp<br>Marketplace</h3>
+  <h4>EcoCorp<br>Marketplace</h4>
     <ng-container *ngFor="let chapter of this.sidebarReferences">
       <p-button
         label="{{chapter.id}}.{{chapter.name}}"
         [rounded]="true"
         [text]="true"
         (onClick)="this.navigateToSection(chapter.reference)"
-        severity="info">
+        severity="success">
       </p-button>
       <br>
     </ng-container>
