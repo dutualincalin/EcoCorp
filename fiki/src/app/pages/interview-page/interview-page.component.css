@@ -7,7 +7,7 @@
   position: relative;
   max-width: 98.5725vw;
   max-height: 1000vmax;
-  margin-bottom: 10vh;
+  margin-bottom: 20vmax;
 }
 
 #client-chart,
@@ -43,4 +43,8 @@ p-fieldset {
   position: relative;
   margin: 2.5vh 0;
   width: 95vw;
+}
+
+h4 {
+  margin-top: 40vmin
 }

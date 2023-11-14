@@ -18,6 +18,8 @@ import { InterviewPageComponent } from './pages/interview-page/interview-page.co
 import { HttpClientModule } from '@angular/common/http';
 import {ChartModule} from "primeng/chart";
 import {FieldsetModule} from "primeng/fieldset";
+import { WireframesPageComponent } from './pages/wireframes-page/wireframes-page.component';
+import {GalleriaModule} from "primeng/galleria";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import {FieldsetModule} from "primeng/fieldset";
     CompetitionPageComponent,
     MetricsPageComponent,
     CostRevenuePageComponent,
-    InterviewPageComponent
+    InterviewPageComponent,
+    WireframesPageComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -40,9 +43,11 @@ import {FieldsetModule} from "primeng/fieldset";
     SidebarModule,
     HttpClientModule,
     ChartModule,
-    FieldsetModule
+    FieldsetModule,
+    GalleriaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

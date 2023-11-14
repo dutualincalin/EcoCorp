@@ -1,4 +1,4 @@
-import {AfterViewChecked, AfterViewInit, Component} from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 import {ReferenceObject} from "./model/ReferenceObject";
 
 
@@ -19,7 +19,8 @@ export class AppComponent implements AfterViewInit{
       new ReferenceObject(4, "Our competition", document.querySelector('#competition-container')),
       new ReferenceObject(5, "Metrics", document.querySelector('#metrics-container')),
       new ReferenceObject(6, "Cost and Revenue", document.querySelector('#cost-revenue-container')),
-      new ReferenceObject(7, "Market Research", document.querySelector('#interview-container'))
+      new ReferenceObject(7, "Market Research", document.querySelector('#interview-container')),
+      new ReferenceObject(8, "Wireframes", document.querySelector('#wireframe-container'))
     )
   }
 
