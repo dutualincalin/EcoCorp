@@ -1,0 +1,35 @@
+#UX-container {
+  max-height: 500vmax;
+  margin: 10vh 0;
+}
+
+.flex-item {
+  flex: 1;
+  width: 30vmax;
+  margin: 2vmax;
+
+  & > div {
+    height: 100%;
+  }
+}
+
+p-card{
+  height: auto;
+  width: 30vmax;
+  margin: 2vmax;
+
+  & > div {
+    height: 100%;
+  }
+}
+
+#personaContainer p-card {
+  height: 100%;
+  width: 30vmax;
+  margin: 2vmax;
+
+  & > div {
+    height: 100%;
+  }
+}
+

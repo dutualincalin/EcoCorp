@@ -20,7 +20,8 @@ export class AppComponent implements AfterViewInit{
       new ReferenceObject(5, "Metrics", document.querySelector('#metrics-container')),
       new ReferenceObject(6, "Cost and Revenue", document.querySelector('#cost-revenue-container')),
       new ReferenceObject(7, "Market Research", document.querySelector('#interview-container')),
-      new ReferenceObject(8, "Wireframes", document.querySelector('#wireframe-container'))
+      new ReferenceObject(8, "Wireframes", document.querySelector('#wireframe-container')),
+      new ReferenceObject(9, "User Experience", document.querySelector('#UX-container'))
     )
   }
 

@@ -20,6 +20,7 @@ import {ChartModule} from "primeng/chart";
 import {FieldsetModule} from "primeng/fieldset";
 import { WireframesPageComponent } from './pages/wireframes-page/wireframes-page.component';
 import {GalleriaModule} from "primeng/galleria";
+import { UserExperiencePageComponent } from './pages/user-experience-page/user-experience-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {GalleriaModule} from "primeng/galleria";
     MetricsPageComponent,
     CostRevenuePageComponent,
     InterviewPageComponent,
-    WireframesPageComponent
+    WireframesPageComponent,
+    UserExperiencePageComponent
   ],
   imports: [
     BrowserAnimationsModule,

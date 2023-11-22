@@ -4,7 +4,12 @@
     <ng-container *ngFor="let person of team">
       <p-card header="{{person.name}}" subheader="{{person.function}}" [style]="{ width: '360px' }">
         <ng-template pTemplate="header">
-          <img alt="Card" [src]=person.imageUrl style=""/>
+          <img
+            alt="Card"
+            [src]=person.imageUrl
+            width="360"
+            height="400"
+            style=""/>
         </ng-template>
 
         <p>Email: {{person.contact}}</p>

@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './wireframes-page.component.html',
   styleUrls: ['./wireframes-page.component.css']
 })
+
 export class WireframesPageComponent {
   wireframes = [
     {

@@ -1,0 +1,108 @@
+<div id="UX-container">
+  <h1>User Experience</h1>
+
+  <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10vmax" >
+    <h3>User interviews</h3>
+      <iframe
+        src="https://drive.google.com/embeddedfolderview?id=1ElpCupXzyT1mMRG9ZFQ6e5zvy-ZnZCqV#list"
+        allow="autoplay"
+        style="width: 90vw; height: 20vmax; border: 0"></iframe>
+
+
+    <h3>Main User persona</h3>
+
+    <!--  User persona design -->
+    <div id="personaContainer" style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; flex-wrap: wrap; margin-bottom: 10vmax">
+
+      <div style="position: relative; display: flex; flex-direction: column; justify-content: space-evenly; width: 30vw; flex-wrap: nowrap; align-items: stretch">
+        <p-card>
+          <ng-template pTemplate="header">
+            <img alt="User persona img" src="./assets/Persona.png" style="width: 30vw">
+          </ng-template>
+
+          <ul style="list-style-type: none; padding: 0">
+            <li style="margin: 2em">
+              <span class="pi pi-user"></span>
+              {{persona.name}}
+            </li>
+
+            <li style="margin: 2em">
+              <span class="pi pi-calendar"></span>
+              {{persona.age}}
+            </li>
+
+            <li style="margin: 2em">
+              <span class="pi pi-briefcase"></span>
+              {{persona.occupation}}
+            </li>
+
+            <li style="margin: 2em">
+              <span class="pi pi-comments"></span>
+              {{persona.status}}
+            </li>
+          </ul>
+        </p-card>
+
+      </div>
+      <div style="position: relative; display: flex; flex-direction: row; justify-content: space-evenly; width: 63vw; flex-wrap: wrap; align-items: stretch">
+        <div style="display: flex; flex-direction: column; justify-content: space-evenly; width: 30vw; height: 100%; flex-wrap: nowrap">
+          <!-- First column -->
+          <p-card>
+            <h3>Nevoi</h3>
+            <ul *ngFor="let needPoint of persona.needs">
+              <li>{{needPoint}}</li>
+            </ul>
+
+            <ng-template pTemplate="footer">
+              <h3>Despre</h3>
+              <ul *ngFor="let aboutPoint of persona.about">
+                <li>{{aboutPoint}}</li>
+              </ul>
+            </ng-template>
+          </p-card>
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: space-evenly; height: 100%; width: 30vw; flex-wrap: wrap">
+          <!--Second column -->
+
+          <p-card>
+            <h3>Motivatie</h3>
+            <ng-template pTemplate="footer">
+              <b>Ambitie</b> <br>
+              {{persona.motivation.Ambitie}}
+
+              <br> <br> <b>Ecologie</b> <br>
+              {{persona.motivation.Ecologie}}
+
+              <br> <br> <b>Familie</b> <br>
+              {{persona.motivation.Familie}}
+            </ng-template>
+          </p-card>
+        </div>
+      </div>
+    </div>
+
+    <h3>User stories</h3>
+
+    <div
+      style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; flex-wrap: wrap; margin-bottom: 10vmax">
+      <ng-container *ngFor="let userStory of this.userStories">
+        <p-card header="User Story {{userStory.id}}">
+          <p>
+            <i>"{{userStory.story}}"</i>
+          </p>
+        </p-card>
+      </ng-container>
+    </div>
+
+    <h3>User flow</h3>
+    <img style="width: 90vw" alt="User Flow" src="./assets/UserFlows.png"/>
+  </div>
+
+  <p-fieldset legend="User Experience Analysis Conclusions">
+    <p class="m-0">
+      Our analysis has concluded that our project idea and implementation are satisfying our potential customers as it is,
+      so we will continue to develop our application using the current version of the app.
+    </p>
+  </p-fieldset>
+</div>
