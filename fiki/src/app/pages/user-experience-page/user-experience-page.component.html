@@ -1,91 +1,83 @@
 <div id="UX-container">
   <h1>User Experience</h1>
 
-  <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10vmax" >
+  <div id="UX-body">
     <h3>User interviews</h3>
-      <iframe
-        src="https://drive.google.com/embeddedfolderview?id=1ElpCupXzyT1mMRG9ZFQ6e5zvy-ZnZCqV#list"
-        allow="autoplay"
-        style="width: 90vw; height: 20vmax; border: 0"></iframe>
+
+    <iframe
+      src="https://drive.google.com/embeddedfolderview?id=1ElpCupXzyT1mMRG9ZFQ6e5zvy-ZnZCqV#list"
+      allow="autoplay"
+      id="UX-interviews"
+    >
+    </iframe>
 
 
     <h3>Main User persona</h3>
 
     <!--  User persona design -->
-    <div id="personaContainer" style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; flex-wrap: wrap; margin-bottom: 10vmax">
+    <div id="personaContainer">
+      <p-card>
+        <ng-template pTemplate="header">
+          <img alt="User persona img" src="./assets/Persona.png" style="width: 25vmax">
+        </ng-template>
 
-      <div style="position: relative; display: flex; flex-direction: column; justify-content: space-evenly; width: 30vw; flex-wrap: nowrap; align-items: stretch">
-        <p-card>
-          <ng-template pTemplate="header">
-            <img alt="User persona img" src="./assets/Persona.png" style="width: 30vw">
-          </ng-template>
+        <ul style="list-style-type: none;">
+          <li style="margin-bottom: 2em">
+            <span class="pi pi-user"></span>
+            {{persona.name}}
+          </li>
 
-          <ul style="list-style-type: none; padding: 0">
-            <li style="margin: 2em">
-              <span class="pi pi-user"></span>
-              {{persona.name}}
-            </li>
+          <li style="margin-bottom: 2em">
+            <span class="pi pi-calendar"></span>
+            {{persona.age}}
+          </li>
 
-            <li style="margin: 2em">
-              <span class="pi pi-calendar"></span>
-              {{persona.age}}
-            </li>
+          <li style="margin-bottom: 2em">
+            <span class="pi pi-briefcase"></span>
+            {{persona.occupation}}
+          </li>
 
-            <li style="margin: 2em">
-              <span class="pi pi-briefcase"></span>
-              {{persona.occupation}}
-            </li>
+          <li>
+            <span class="pi pi-comments"></span>
+            {{persona.status}}
+          </li>
+        </ul>
+      </p-card>
 
-            <li style="margin: 2em">
-              <span class="pi pi-comments"></span>
-              {{persona.status}}
-            </li>
+      <p-card>
+        <ng-template pTemplate="header">
+          <br>
+          <h4>Nevoi</h4>
+          <ul *ngFor="let needPoint of persona.needs">
+            <li>{{needPoint}}</li>
           </ul>
-        </p-card>
 
-      </div>
-      <div style="position: relative; display: flex; flex-direction: row; justify-content: space-evenly; width: 63vw; flex-wrap: wrap; align-items: stretch">
-        <div style="display: flex; flex-direction: column; justify-content: space-evenly; width: 30vw; height: 100%; flex-wrap: nowrap">
-          <!-- First column -->
-          <p-card>
-            <h3>Nevoi</h3>
-            <ul *ngFor="let needPoint of persona.needs">
-              <li>{{needPoint}}</li>
-            </ul>
+          <h4>Despre</h4>
+          <ul *ngFor="let aboutPoint of persona.about">
+            <li>{{aboutPoint}}</li>
+          </ul>
+        </ng-template>
+      </p-card>
 
-            <ng-template pTemplate="footer">
-              <h3>Despre</h3>
-              <ul *ngFor="let aboutPoint of persona.about">
-                <li>{{aboutPoint}}</li>
-              </ul>
-            </ng-template>
-          </p-card>
-        </div>
+      <p-card>
+        <ng-template pTemplate="header">
+          <br>
+          <h4>Motivatie</h4>
+        </ng-template>
+          <b>Ambitie</b> <br>
+          {{persona.motivation.Ambitie}}
 
-        <div style="display: flex; flex-direction: column; justify-content: space-evenly; height: 100%; width: 30vw; flex-wrap: wrap">
-          <!--Second column -->
+          <br> <br> <br> <b>Ecologie</b> <br>
+          {{persona.motivation.Ecologie}}
 
-          <p-card>
-            <h3>Motivatie</h3>
-            <ng-template pTemplate="footer">
-              <b>Ambitie</b> <br>
-              {{persona.motivation.Ambitie}}
-
-              <br> <br> <b>Ecologie</b> <br>
-              {{persona.motivation.Ecologie}}
-
-              <br> <br> <b>Familie</b> <br>
-              {{persona.motivation.Familie}}
-            </ng-template>
-          </p-card>
-        </div>
-      </div>
+          <br> <br> <br> <b>Familie</b> <br>
+          {{persona.motivation.Familie}}
+      </p-card>
     </div>
 
     <h3>User stories</h3>
 
-    <div
-      style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; flex-wrap: wrap; margin-bottom: 10vmax">
+    <div id="userStoryContainer">
       <ng-container *ngFor="let userStory of this.userStories">
         <p-card header="User Story {{userStory.id}}">
           <p>

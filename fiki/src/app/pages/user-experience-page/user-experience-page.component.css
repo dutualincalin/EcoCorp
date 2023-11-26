@@ -1,35 +1,60 @@
 #UX-container {
-  max-height: 500vmax;
+  position: relative;
+  height: fit-content;
   margin: 10vh 0;
 }
 
-.flex-item {
-  flex: 1;
-  width: 30vmax;
-  margin: 2vmax;
+#UX-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vmax;
+}
 
-  & > div {
-    height: 100%;
+#UX-interviews {
+  width: 90vw;
+  height: 20vmax;
+  border: 0;
+  margin-bottom: 10vmax;
+}
+
+#personaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 95vw;
+  flex-wrap: wrap;
+  margin: 3vmax 0 10vmax 0;
+  max-height: fit-content;
+
+  & p-card {
+    width: 25vmax;
+    margin-top: 3vmax;
+
+    & > div {
+      height: 100%;
+    }
   }
 }
 
-p-card{
-  height: auto;
-  width: 30vmax;
-  margin: 2vmax;
+#userStoryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 10vmax;
 
-  & > div {
-    height: 100%;
+  & p-card {
+    width: 30vmax;
+    margin: 2vmax;
+
+    & > div {
+      height: 100%;
+    }
   }
 }
 
-#personaContainer p-card {
-  height: 100%;
-  width: 30vmax;
-  margin: 2vmax;
-
-  & > div {
-    height: 100%;
-  }
+ul {
+  padding-inline-end: 20px;
 }
-

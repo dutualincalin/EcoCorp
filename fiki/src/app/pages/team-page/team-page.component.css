@@ -6,7 +6,7 @@
   flex-wrap: nowrap;
   position: relative;
   max-width: 98.5725vw;
-  max-height: 500vmax;
+  height: fit-content;
   margin-bottom: 10vh;
 }
 
