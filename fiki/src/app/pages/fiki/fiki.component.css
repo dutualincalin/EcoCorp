@@ -1,0 +1,11 @@
+#option-button {
+  position: fixed;
+  z-index: 1000;
+}
+
+::ng-deep #footer-toolbar > div {
+  margin-top: 10vh;
+  background-color: rgb(166, 214, 230) !important;
+  padding: 0 1vw;
+  width: 98vw;
+}

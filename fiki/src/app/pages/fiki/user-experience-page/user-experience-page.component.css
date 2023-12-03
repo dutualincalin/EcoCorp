@@ -1,0 +1,60 @@
+#UX-container {
+  position: relative;
+  height: fit-content;
+  margin: 10vh 0;
+}
+
+#UX-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vmax;
+}
+
+#UX-interviews {
+  width: 90vw;
+  height: 20vmax;
+  border: 0;
+  margin-bottom: 10vmax;
+}
+
+#personaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 95vw;
+  flex-wrap: wrap;
+  margin: 3vmax 0 10vmax 0;
+  max-height: fit-content;
+
+  & p-card {
+    width: 25vmax;
+    margin-top: 3vmax;
+
+    & > div {
+      height: 100%;
+    }
+  }
+}
+
+#userStoryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 10vmax;
+
+  & p-card {
+    width: 30vmax;
+    margin: 2vmax;
+
+    & > div {
+      height: 100%;
+    }
+  }
+}
+
+ul {
+  padding-inline-end: 20px;
+}

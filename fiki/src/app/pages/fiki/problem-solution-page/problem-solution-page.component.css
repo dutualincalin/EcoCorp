@@ -1,0 +1,28 @@
+#problem-solution-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 98.5725vw;
+  height: fit-content;
+  border-radius: 15px;
+  margin-bottom: 20vmax;
+}
+
+img {
+  max-height: 60vh;
+  min-width: 25vw;
+  position: relative;
+  z-index: -1000;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+p-card {
+  max-height: 100vh;
+  max-width: 25.5vmax;
+  min-width: 22vmax;
+}
+
