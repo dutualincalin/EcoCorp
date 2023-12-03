@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {ButtonModule} from "primeng/button";
 import { IntroPageComponent } from './pages/fiki/intro-page/intro-page.component';
-import {NgOptimizedImage} from "@angular/common";
+import {LocationStrategy, HashLocationStrategy, NgOptimizedImage} from "@angular/common";
 import { TeamPageComponent } from './pages/fiki/team-page/team-page.component';
 import {CardModule} from "primeng/card";
 import { ProblemSolutionPageComponent } from './pages/fiki/problem-solution-page/problem-solution-page.component';
@@ -58,7 +58,7 @@ import {OverlayPanelModule} from "primeng/overlaypanel";
         RouterOutlet,
         OverlayPanelModule
     ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 
