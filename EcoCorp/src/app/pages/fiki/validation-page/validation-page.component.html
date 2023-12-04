@@ -1,0 +1,32 @@
+<div id="validation-container">
+  <h1> Validation </h1>
+
+  <h3> Promoting Posts </h3>
+  <div id="posts-container">
+
+    <p-galleria
+      [value]="this.images"
+      [showIndicators]="true"
+      [showThumbnails]="false"
+      [changeItemOnIndicatorHover]="true"
+      [responsiveOptions]="responsiveOptions"
+      [containerStyle]="{ 'max-width': '640px' }"
+    >
+      <ng-template pTemplate="item" let-item>
+        <img
+          [src]="item.src"
+          [alt]="item.alt"
+          style="width: 100%; display: block;" />
+      </ng-template>
+      <ng-template pTemplate="caption" let-item>
+        <p style="margin-bottom: .5rem; color: #ffffff;">{{ item.title }}</p>
+      </ng-template>
+    </p-galleria>
+  </div>
+
+  <h3> Landing Page Statistics</h3>
+  <div id="Metrics container">
+
+<!--    Add data-->
+  </div>
+</div>
