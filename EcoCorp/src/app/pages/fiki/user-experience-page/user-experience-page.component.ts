@@ -55,5 +55,4 @@ export class UserExperiencePageComponent {
       "products, even though she wished to."
     )
   ]
-  protected readonly Object = Object;
 }

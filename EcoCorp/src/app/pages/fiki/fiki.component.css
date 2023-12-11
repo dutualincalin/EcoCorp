@@ -3,8 +3,6 @@
   z-index: 1000;
 }
 
-::ng-deep #footer-toolbar > div {
-  margin-top: 10vh;
-  background-color: rgb(166, 214, 230) !important;
-  width: 100%;
+#home-button {
+  z-index: 10000;
 }

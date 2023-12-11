@@ -15,48 +15,38 @@
 
   <!--  User persona design -->
   <div id="personaContainer">
-    <p-card>
-      <ng-template pTemplate="header">
-        <img alt="User persona img" src="./assets/Persona.png" style="width: 25vmax">
-      </ng-template>
+    <div class="personaInnerContainer">
+      <img alt="User persona img" src="./assets/Persona.png" style="width: 25vmax; margin-top: 20px">
 
-      <ul style="list-style-type: none;">
-        <li style="margin-bottom: 2em">
-          <span class="pi pi-user"></span>
-          {{persona.name}}
-        </li>
+      <p-card>
+        <ul style="list-style-type: none;">
+          <li style="margin-bottom: 2em">
+            <span class="pi pi-user"></span>
+            {{persona.name}}
+          </li>
 
-        <li style="margin-bottom: 2em">
-          <span class="pi pi-calendar"></span>
-          {{persona.age}}
-        </li>
+          <li style="margin-bottom: 2em">
+            <span class="pi pi-calendar"></span>
+            {{persona.age}}
+          </li>
 
-        <li style="margin-bottom: 2em">
-          <span class="pi pi-briefcase"></span>
-          {{persona.occupation}}
-        </li>
+          <li style="margin-bottom: 2em">
+            <span class="pi pi-briefcase"></span>
+            {{persona.occupation}}
+          </li>
 
-        <li>
-          <span class="pi pi-comments"></span>
-          {{persona.status}}
-        </li>
-      </ul>
-    </p-card>
-
-    <p-card>
-        <h4>Needs</h4>
-        <ul *ngFor="let needPoint of persona.needs">
-          <li>{{needPoint}}</li>
+          <li>
+            <span class="pi pi-comments"></span>
+            {{persona.status}}
+          </li>
         </ul>
+      </p-card>
+    </div>
 
-        <h4>About</h4>
-        <ul *ngFor="let aboutPoint of persona.about">
-          <li>{{aboutPoint}}</li>
-        </ul>
-    </p-card>
-
-    <p-card>
+    <div class="personaInnerContainer">
+      <p-card>
         <h4>Motivation</h4>
+
         <b>Ambition</b> <br>
         {{persona.motivation.Ambitie}}
 
@@ -65,7 +55,22 @@
 
         <br> <br> <br> <b>Family</b> <br>
         {{persona.motivation.Familie}}
-    </p-card>
+      </p-card>
+    </div>
+
+    <div class="personaInnerContainer">
+      <p-card header="Needs">
+        <ul *ngFor="let needPoint of persona.needs">
+          <li>{{needPoint}}</li>
+        </ul>
+      </p-card>
+
+      <p-card header="About">
+          <ul *ngFor="let aboutPoint of persona.about">
+            <li>{{aboutPoint}}</li>
+          </ul>
+      </p-card>
+    </div>
   </div>
 
   <h3>User stories</h3>

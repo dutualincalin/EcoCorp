@@ -25,15 +25,3 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
-
-::ng-deep #header-toolbar > div {
-  border: rgb(255, 255, 255) !important;
-  background-color: rgb(255, 255, 255) !important;
-  position: relative;
-  padding: 0 0 2vh 60px;
-  width: 98vw;
-}
-
-#home-button {
-  z-index: 10000;
-}

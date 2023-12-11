@@ -30,3 +30,17 @@ h5 {
   font-family: sans-serif;
   font-size: 2vw;
 }
+
+#header-toolbar > div {
+  border: rgb(255, 255, 255) !important;
+  background-color: rgb(255, 255, 255) !important;
+  position: relative;
+  padding: 0 0 2vh 60px;
+  width: 98vw;
+}
+
+#footer-toolbar > div{
+  background: rgb(166, 214, 230) !important;
+  width: 100%;
+  padding: 0 3vmin;
+}

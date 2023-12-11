@@ -1,4 +1,4 @@
-#validation-container {
+#analytics-validation-container {
   display: flex;
   justify-content: center;
   max-width: 98.5725vw;
@@ -16,7 +16,7 @@
   margin-bottom: 10vmax;
 }
 
-#analytics-container {
+#metrics-container {
   display: flex;
   justify-content: center;
   width: 100%;

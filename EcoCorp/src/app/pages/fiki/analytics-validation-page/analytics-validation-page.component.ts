@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-validation-page',
-  templateUrl: './validation-page.component.html',
-  styleUrls: ['./validation-page.component.css']
+  selector: 'app-analytics-validation-page',
+  templateUrl: './analytics-validation-page.component.html',
+  styleUrls: ['./analytics-validation-page.component.css']
 })
-export class ValidationPageComponent {
+export class AnalyticsValidationPageComponent {
   report_images: any[] = [
     {
       src: "./assets/analytics-report/Report_1.png",

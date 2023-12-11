@@ -26,7 +26,7 @@ import {FikiComponent} from "./pages/fiki/fiki.component";
 import {RouterOutlet} from "@angular/router";
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import {OverlayPanelModule} from "primeng/overlaypanel";
-import { ValidationPageComponent } from './pages/fiki/validation-page/validation-page.component';
+import { AnalyticsValidationPageComponent } from './pages/fiki/analytics-validation-page/analytics-validation-page.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +42,7 @@ import { ValidationPageComponent } from './pages/fiki/validation-page/validation
     UserExperiencePageComponent,
     FikiComponent,
     LandingPageComponent,
-    ValidationPageComponent,
+    AnalyticsValidationPageComponent,
   ],
     imports: [
         BrowserAnimationsModule,
