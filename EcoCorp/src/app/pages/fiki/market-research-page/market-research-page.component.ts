@@ -4,11 +4,11 @@ import * as XLSX from 'xlsx';
 import {QA} from "../../../model/QA";
 
 @Component({
-  selector: 'app-interview-page',
-  templateUrl: './interview-page.component.html',
-  styleUrls: ['./interview-page.component.css']
+  selector: 'app-market-research-page',
+  templateUrl: './market-research-page.component.html',
+  styleUrls: ['./market-research-page.component.css']
 })
-export class InterviewPageComponent implements OnInit{
+export class MarketResearchPageComponent implements OnInit{
   constructor(private http: HttpClient) {}
 
   clientData: any[] = []

@@ -1,0 +1,26 @@
+#validation-container {
+  display: flex;
+  justify-content: center;
+  max-width: 98.5725vw;
+  flex-wrap: wrap;
+  margin-top: 5vmax;
+  margin-bottom: 15vmax;
+}
+
+#posts-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5vmax;
+  margin-bottom: 10vmax;
+}
+
+#analytics-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5vmax;
+  margin-bottom: 10vmax;
+}

@@ -6,19 +6,46 @@ import { Component } from '@angular/core';
   styleUrls: ['./validation-page.component.css']
 })
 export class ValidationPageComponent {
-  images : any[] = [
+  report_images: any[] = [
     {
-      src: "",
+      src: "./assets/analytics-report/Report_1.png",
+      alt: "First measurement"
+    },
+    {
+      src: "./assets/analytics-report/Report_2.png",
+      alt: "Second measurement"
+    },
+    {
+      src: "./assets/analytics-report/Report_3.png",
+      alt: "Third measurement"
+    },
+    {
+      src: "./assets/analytics-report/Report_4.png",
+      alt: "Forth measurement"
+    },
+    {
+      src: "./assets/analytics-report/Report_5.png",
+      alt: "Fifth measurement"
+    },
+    {
+      src: "./assets/analytics-report/Report_6.png",
+      alt: "Sixth measurement"
+    },
+  ]
+
+  post_images : any[] = [
+    {
+      src: "./assets/posts-screenshots/",
       alt:"Facebook Post",
       title: "<a href=''>Facebook post</a>"
     },
     {
-      src: "",
+      src: "./assets/posts-screenshots/",
       alt:"Instagram Post",
       title: "<a href=''>Instagram post</a>"
     },
     {
-      src: "",
+      src: "./assets/posts-screenshots/",
       alt:"Pinterest Post",
       title: "<a href=''>Pinterest post</a>"
     },

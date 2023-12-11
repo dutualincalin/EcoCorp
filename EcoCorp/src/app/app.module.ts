@@ -14,7 +14,7 @@ import {CostRevenuePageComponent} from "./pages/fiki/cost-revenue-page/cost-reve
 import {ToolbarModule} from "primeng/toolbar";
 import {SidebarModule} from "primeng/sidebar";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { InterviewPageComponent } from './pages/fiki/interview-page/interview-page.component';
+import { MarketResearchPageComponent } from './pages/fiki/market-research-page/market-research-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import {ChartModule} from "primeng/chart";
 import {FieldsetModule} from "primeng/fieldset";
@@ -37,7 +37,7 @@ import { ValidationPageComponent } from './pages/fiki/validation-page/validation
     CompetitionPageComponent,
     MetricsPageComponent,
     CostRevenuePageComponent,
-    InterviewPageComponent,
+    MarketResearchPageComponent,
     WireframesPageComponent,
     UserExperiencePageComponent,
     FikiComponent,

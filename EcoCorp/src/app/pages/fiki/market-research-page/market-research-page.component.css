@@ -6,8 +6,9 @@
   flex-wrap: nowrap;
   position: relative;
   max-width: 98.5725vw;
-  height: fit-content;
-  margin-bottom: 20vmax;
+  margin-top: 5vmax;
+  max-height: 1000vh;
+  margin-bottom: 15vmax;
 }
 
 #client-chart,
@@ -35,7 +36,7 @@
 }
 
 #QA-section-container {
-  margin: 2vh;
+  margin: 1vmax;
 }
 
 p-fieldset {
@@ -45,6 +46,7 @@ p-fieldset {
   width: 95vw;
 }
 
-h4 {
-  margin-top: 40vmin
+h3 {
+  margin-top: 6vmax;
+  margin-bottom: 4vmax;
 }

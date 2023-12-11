@@ -1,93 +1,88 @@
+<h1>User Experience</h1>
+
 <div id="UX-container">
-  <h1>User Experience</h1>
+  <h3>User interviews</h3>
 
-  <div id="UX-body">
-    <h3>User interviews</h3>
-
-    <iframe
-      src="https://drive.google.com/embeddedfolderview?id=1ElpCupXzyT1mMRG9ZFQ6e5zvy-ZnZCqV#list"
-      allow="autoplay"
-      id="UX-interviews"
-    >
-    </iframe>
+  <iframe
+    src="https://drive.google.com/embeddedfolderview?id=1ElpCupXzyT1mMRG9ZFQ6e5zvy-ZnZCqV#list"
+    allow="autoplay"
+    id="UX-interviews"
+  >
+  </iframe>
 
 
-    <h3>Main User persona</h3>
+  <h3>Main User persona</h3>
 
-    <!--  User persona design -->
-    <div id="personaContainer">
-      <p-card>
-        <ng-template pTemplate="header">
-          <img alt="User persona img" src="./assets/Persona.png" style="width: 25vmax">
-        </ng-template>
+  <!--  User persona design -->
+  <div id="personaContainer">
+    <p-card>
+      <ng-template pTemplate="header">
+        <img alt="User persona img" src="./assets/Persona.png" style="width: 25vmax">
+      </ng-template>
 
-        <ul style="list-style-type: none;">
-          <li style="margin-bottom: 2em">
-            <span class="pi pi-user"></span>
-            {{persona.name}}
-          </li>
+      <ul style="list-style-type: none;">
+        <li style="margin-bottom: 2em">
+          <span class="pi pi-user"></span>
+          {{persona.name}}
+        </li>
 
-          <li style="margin-bottom: 2em">
-            <span class="pi pi-calendar"></span>
-            {{persona.age}}
-          </li>
+        <li style="margin-bottom: 2em">
+          <span class="pi pi-calendar"></span>
+          {{persona.age}}
+        </li>
 
-          <li style="margin-bottom: 2em">
-            <span class="pi pi-briefcase"></span>
-            {{persona.occupation}}
-          </li>
+        <li style="margin-bottom: 2em">
+          <span class="pi pi-briefcase"></span>
+          {{persona.occupation}}
+        </li>
 
-          <li>
-            <span class="pi pi-comments"></span>
-            {{persona.status}}
-          </li>
+        <li>
+          <span class="pi pi-comments"></span>
+          {{persona.status}}
+        </li>
+      </ul>
+    </p-card>
+
+    <p-card>
+        <h4>Needs</h4>
+        <ul *ngFor="let needPoint of persona.needs">
+          <li>{{needPoint}}</li>
         </ul>
+
+        <h4>About</h4>
+        <ul *ngFor="let aboutPoint of persona.about">
+          <li>{{aboutPoint}}</li>
+        </ul>
+    </p-card>
+
+    <p-card>
+        <h4>Motivation</h4>
+        <b>Ambition</b> <br>
+        {{persona.motivation.Ambitie}}
+
+        <br> <br> <br> <b>Ecology</b> <br>
+        {{persona.motivation.Ecologie}}
+
+        <br> <br> <br> <b>Family</b> <br>
+        {{persona.motivation.Familie}}
+    </p-card>
+  </div>
+
+  <h3>User stories</h3>
+
+  <div id="userStoryContainer">
+    <ng-container *ngFor="let userStory of this.userStories">
+      <p-card header="User Story {{userStory.id}}">
+        <p>
+          <i>"{{userStory.story}}"</i>
+        </p>
       </p-card>
+    </ng-container>
+  </div>
 
-      <p-card>
-        <ng-template pTemplate="header">
-          <br>
-          <h4>Nevoi</h4>
-          <ul *ngFor="let needPoint of persona.needs">
-            <li>{{needPoint}}</li>
-          </ul>
+  <h3>User flow</h3>
 
-          <h4>Despre</h4>
-          <ul *ngFor="let aboutPoint of persona.about">
-            <li>{{aboutPoint}}</li>
-          </ul>
-        </ng-template>
-      </p-card>
-
-      <p-card>
-        <ng-template pTemplate="header">
-          <br>
-          <h4>Motivatie</h4>
-        </ng-template>
-          <b>Ambitie</b> <br>
-          {{persona.motivation.Ambitie}}
-
-          <br> <br> <br> <b>Ecologie</b> <br>
-          {{persona.motivation.Ecologie}}
-
-          <br> <br> <br> <b>Familie</b> <br>
-          {{persona.motivation.Familie}}
-      </p-card>
-    </div>
-
-    <h3>User stories</h3>
-
-    <div id="userStoryContainer">
-      <ng-container *ngFor="let userStory of this.userStories">
-        <p-card header="User Story {{userStory.id}}">
-          <p>
-            <i>"{{userStory.story}}"</i>
-          </p>
-        </p-card>
-      </ng-container>
-    </div>
-
-    <h3>User flow</h3>
+  <div id="userFlowContainer">
     <img style="width: 90vw" alt="User Flow" src="./assets/UserFlows.png"/>
   </div>
 

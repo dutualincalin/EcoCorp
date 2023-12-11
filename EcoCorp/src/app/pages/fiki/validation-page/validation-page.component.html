@@ -1,32 +1,29 @@
-<div id="validation-container">
-  <h1> Validation </h1>
+<h1> Validation </h1>
 
+<div id="validation-container">
   <h3> Promoting Posts </h3>
   <div id="posts-container">
 
+  </div>
+
+  <h3> Landing Page Statistics</h3>
+  <div id="analytics-container">
     <p-galleria
-      [value]="this.images"
+      [value]="this.report_images"
       [showIndicators]="true"
       [showThumbnails]="false"
       [changeItemOnIndicatorHover]="true"
       [responsiveOptions]="responsiveOptions"
-      [containerStyle]="{ 'max-width': '640px' }"
+      [containerStyle]="{ 'max-height': '640px' }"
+      [autoPlay]="true"
+      [circular]="true"
     >
       <ng-template pTemplate="item" let-item>
         <img
           [src]="item.src"
           [alt]="item.alt"
-          style="width: 100%; display: block;" />
-      </ng-template>
-      <ng-template pTemplate="caption" let-item>
-        <p style="margin-bottom: .5rem; color: #ffffff;">{{ item.title }}</p>
+          style="height: 55vmin; max-width:100%; display: block;" />
       </ng-template>
     </p-galleria>
-  </div>
-
-  <h3> Landing Page Statistics</h3>
-  <div id="Metrics container">
-
-<!--    Add data-->
   </div>
 </div>

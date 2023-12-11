@@ -9,7 +9,7 @@ import {LandingPageComponent} from "./pages/landing-page/landing-page.component"
 const routes: Routes = [
   {path: 'fiki', component: FikiComponent},
   {path: 'landing-page', component: LandingPageComponent},
-  {path: '**', redirectTo: '/fiki', pathMatch: 'full'},
+  {path: '**', redirectTo: '/landing-page', pathMatch: 'full'},
 ]
 
 @NgModule({

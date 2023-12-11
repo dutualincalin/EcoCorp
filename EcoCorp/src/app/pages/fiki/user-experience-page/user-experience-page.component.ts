@@ -9,52 +9,50 @@ import {UserStory} from "../../../model/UserStory";
 export class UserExperiencePageComponent {
   persona = {
     name: "Iolanda",
-    occupation: "Specialist HR in cadrul unei corporatii",
-    age:"34 ani",
-    status:"Divortata, 2 copii",
+    occupation: "HR specialist in a corporation",
+    age:"34 years",
+    status:"Divorced, 2 children",
     motivation: {
-      Familie: "Cele doua fete sunt cel mai important lucru pentru Iolanda și dorește sa le asigure acestora o" +
-        "viață fericită, chiar și în lipsa unei figuri paterne",
-      Ambitie: "Iolanda este o femeie ambitioasa, ce nu va accepta niciodată că rolul unei femei este doar acela de" +
-        "a avea grija de copii și de casa. O femeie poate fi și mama, și CEO!",
-      Ecologie: "O parte din educația pe care le-o oferă fetelor este aceea ca Pamantul este casa noastra si ca nu" +
-        "trebuie sa abuzam de resursele acestuia. Prin urmare, prefera sa cumpere de cele mai multe ori produse second" +
-        "hand, pentru a nu incuraja risipa"
+      Familie: "The 2 little girls are the most important for Iolanda and she wishes to provide them a happy life," +
+        " even without a father figure",
+      Ambitie: "Iolanda is an ambitious woman, who will never accept that a woman's role is only to take care of the" +
+        " kids and do house chores. A woman can be a mother and a CEO in the same time!",
+      Ecologie: "Part of the education she gave to her daughters is that the Earth is our home and we shouldn't abuse" +
+        " its resources. So, she prefers to buy second hand products most of the times, to not encourage resource waste."
     },
     about:[
-      "Își petrece majoritatea timpului cu familia, atunci cand nu este la corporație",
-      "Este o persoana foarte activa si organizată. Atunci cand nu este la birou, face activități cu fetele. Atunci" +
-      "cand fetele sunt la scoala sau fac alte activități extracurriculare (pentru ca o mostenesc), îi place sa faca" +
-      "diferite cursuri, pentru a se dezvolta in cat mai multe arii",
-      "Îi place sa fie în pas cu tot ceea ce se întâmplă în jurul ei, de la tehnologie la tendințe politice"
+      "She spends most of her time with the family, when she isn't at work.",
+      "She is an active and well-organized. When not working, she spends time with her girls organizing fun" +
+      "activities. When her kids are not home, she likes to take different courses on self-improvement.",
+      "She likes to be up to date with the world, from technology to political trends.",
     ],
     needs: [
-      "Dorește un venit lunar mai mare, pentru a le asigura fetelor un trai cat mai decent.",
-      "Are nevoia de provocari constante in viata ei."
+      "Wishes for a greater income, to ensure her girls a decent living.",
+      "She needs constant challenges in her life."
     ]
   }
 
   userStories: UserStory[] = [
     new UserStory(
       1,
-      "Iolanda dorește să-și deschidă o firma de consultanta financiara, însă are nevoie de " +
-      "piese de mobilier și echipament. Aceasta nu dorește sa investească foarte mult în acestea, de aceea vrea sa " +
-      "opteze pentru piese second hand, dar care sa fie același model."
+      "Iolanda wishes to start a financial consultancy company, but she requires pieces of furniture and" +
+      " technology equipment. She doesn't want to invest too much, therefore she would like to find second hand" +
+      " products that should work as the original models."
     ),
     new UserStory(
       2,
-      "Fiica cea mica, împreună cu pisica de rasa portocalie, nu sunt cele mai atente atunci cand vine vorba de" +
-      " lucrurile fragile din casa, asa ca Iolanda este nevoită sa schimbe constant lucruri din apartament."
+      "The little daughter, together with family's orange cat are not the most careful when talking about" +
+      "fragile things, so Iolanda needs to constantly change things in her apartment."
     ),
     new UserStory(
       3,
-      "Iolanda a avut probleme cu unii oameni ce își vindeau propriile produse pe diverse site-uri, de aceea ar" +
-      " dori sa ia legatura cu persoane juridice pe viitor, care sa acorde mai multă încredere"
+      "Iolanda had incidents with individual sellers on different websites, therefore she is looking for a " +
+      "website which should act as an entity between buyer and seller, that should be more credible."
     ),
     new UserStory(
       4,
-      "Iolanda a văzut ce se intampla atunci cand compania la care ea lucrează vinde obiecte ce trebuie" +
-      " înlocuite. Aceasta nu poate cumpara mai mult de 2 produse de cele mai multe ori, deși deseori ar fi dorit."
+      "Iolanda noticed what happens when items from her company are replaced. She cannot buy more than 2" +
+      "products, even though she wished to."
     )
   ]
   protected readonly Object = Object;

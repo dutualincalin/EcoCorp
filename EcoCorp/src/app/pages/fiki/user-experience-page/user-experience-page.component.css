@@ -1,21 +1,18 @@
 #UX-container {
   position: relative;
-  height: fit-content;
-  margin: 10vh 0;
-}
-
-#UX-body {
+  max-height: 1000vh;
+  max-width: 98.5725vw;
+  margin: 5vmax 0 15vmax 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10vmax;
 }
 
 #UX-interviews {
   width: 90vw;
-  height: 20vmax;
+  height: 13vmax;
   border: 0;
-  margin-bottom: 10vmax;
+  margin-bottom: 3vmax;
 }
 
 #personaContainer {
@@ -24,11 +21,11 @@
   justify-content: space-evenly;
   width: 95vw;
   flex-wrap: wrap;
-  margin: 3vmax 0 10vmax 0;
-  max-height: fit-content;
+  margin-bottom: 10vmax;
+  max-height: 1000vh;
 
   & p-card {
-    width: 25vmax;
+    max-width: 25vmax;
     margin-top: 3vmax;
 
     & > div {
@@ -53,6 +50,15 @@
       height: 100%;
     }
   }
+}
+
+#userFlowContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 5vmax;
+  margin-bottom: 10vmax;
 }
 
 ul {

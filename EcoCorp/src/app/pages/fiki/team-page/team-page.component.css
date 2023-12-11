@@ -6,8 +6,8 @@
   flex-wrap: nowrap;
   position: relative;
   max-width: 98.5725vw;
-  height: fit-content;
-  margin-bottom: 10vh;
+  max-height: 1000vh;
+  margin-bottom: 15vmax;
 }
 
 #card-container {
