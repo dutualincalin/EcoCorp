@@ -166,18 +166,68 @@ img {
   grid-template-rows: 0 100%;
 }
 
-#pLCmi7RCyZDRsGuX {
+#pLCmi7RCyZDRsGuX { // blue points
   grid-area: 2 / 2 / 4 / 6;
   position: relative;
   clip-path: polygon(36.24717408% calc(0.94444444 * 9.00838547rem), 100% calc(0.94444444 * 9.00838547rem), 100% 100%, 36.24717408% 100%);
   margin: -94.44444444% 0 0 -56.85579196%;
 }
 
+@media (max-width: 1000px) {
+  #pLCmi7RCyZDRsGuX {
+    /* Adjust size for mobile view */
+    width: 5%; /* Adjust the width based on your design */
+    height: auto; /* Allow the height to adjust proportionally */
+    clip-path: none; /* Remove clip path for mobile view */
+    margin: 0; /* Reset margin for mobile view */
+  }
+}
+
+@media (max-width: 1000px) {
+  #TNT34dnGEyp8cLoC {
+    font-size: 100%;
+  }
+}
+
+// @media (max-width: 1000px) {
+//   #qC7ILLhd6Q2nKfOm {
+//     margin-top: -5%;
+//   }
+// }
+
+@media (max-width: 1000px) {
+  #ydiDMuDLr6fCt9t5 {
+    max-width: 20%;
+    max-height: 20%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #JRLn9fi3oPe9XAVR,
+  #nTrGu6hywjGKVvTV,
+  // #BNpNVtqbZeYZaXyV,
+  #TeUfpeZaHKZ8vSmG {
+    /* Adjust size for mobile view */
+    font-size: 50%;
+    margin-left: -40%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #BNpNVtqbZeYZaXyV {
+    font-size: 50%;
+    margin-left: 50%;
+    display: none;
+  };
+}
+
+
 #gg0nOzOopkMlGUT0,
-#A4pF1lyYU32Um7GE,
+// #A4pF1lyYU32Um7GE,
 #IiuTRgmh1iMyLAfD,
 #mkOWcGry1DYa0dtq {
   font-size: 5.47431825em;
+  margin-top: 20%;
 }
 
 #Vrgd31rqQNjp4SvS,
@@ -289,7 +339,8 @@ img {
 }
 
 #tqynyzU9xMXU2HIV {
-  font-size: 5.83856515em;
+  font-size: 0.1em;
+  margin-top: 25%;
 }
 
 #E0qJmJ2KNHOMCqwt {
@@ -301,6 +352,12 @@ img {
 
 #htvxZLdiec6ApBtD {
   min-width: 19.08178973rem;
+}
+
+@media (max-width: 1000px) {
+  #DGr9lXzBc5z3BZXn {
+    font-size: 50%; /* Adjust the font size based on your design */
+  }
 }
 
 #hkrrVxnAD8xDylFt {
@@ -322,6 +379,7 @@ img {
   grid-area: 8 / 15 / 25 / 21;
   position: relative;
 }
+
 
 #NSQ4Wt3gPH2fC8SU {
   grid-area: 3 / 16 / 7 / 19;
@@ -389,11 +447,29 @@ img {
   margin: 0 -51.87351757% -91.55951154% 0;
 }
 
-#pgzXUPADLwg7stmS {
+#pgzXUPADLwg7stmS { //problem-solution
   grid-template-columns: 0 2.8076651rem 0.93704246rem 1.00999103rem 4.25368687rem 13.60333274rem 0.07294857rem 0.06200405rem 0.87503841rem 3.53700694rem 2.15588043rem 2.00320399rem 5.03288311rem 0.4996419rem 1.30689065rem 1.07245763rem 10.76464293rem 12.11924462rem 1.07245763rem 0.51008161rem 0 4.38044622rem 4.51089536rem 4.71267131rem 0 1.00999103rem 0 12.38598609rem 5.47103352rem 1.00999103rem 0.58406264rem 2.23882214rem;
   grid-template-rows: 0 0 minmax(5.62225476rem, max-content) minmax(1.2733628rem, max-content) minmax(1.23376328rem, max-content) minmax(2.35831346rem, max-content) minmax(0.46931593rem, max-content) minmax(2.31582038rem, max-content) minmax(0.19196885rem, max-content) minmax(0.27949274rem, max-content) minmax(0.20455561rem, max-content) minmax(0.74971493rem, max-content) minmax(0.02401547rem, max-content) minmax(5.37195672rem, max-content) minmax(0.07244848rem, max-content) minmax(0.90583753rem, max-content) minmax(1.85885882rem, max-content) minmax(0.6760172rem, max-content) minmax(7.76578504rem, max-content) minmax(2.17525173rem, max-content) minmax(0.86877306rem, max-content) minmax(1.45526106rem, max-content) minmax(1.85885882rem, max-content) minmax(3.25957269rem, max-content) minmax(1.66480309rem, max-content) minmax(3.34343688rem, max-content) minmax(0.93724026rem, max-content) minmax(1.35374405rem, max-content) minmax(0.50176884rem, max-content) minmax(1.81879467rem, max-content) minmax(5.61156043rem, max-content) 0;
 }
 
+@media (max-width: 1000px) {
+  #pgzXUPADLwg7stmS {
+    grid-template-columns: repeat(auto-fit, minmax(2px, 0.001fr));
+    /* Adjust the above values based on your design */
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  #feEEygRTESSMY4x0{
+    // max-width: 50%;
+    // max-height: 50%;
+    margin-top: -15%;
+    // margin-right: -50%
+    margin-left: -10%;
+    // size: 20%;
+  }
+}
 #OADdFZpqxpAAGIUb,
 #djpxkzQ6P5juIsIF,
 #F9MpTwWPz9RGcKWh,
@@ -820,6 +896,8 @@ img {
   grid-template-columns: 7.59033933rem 3.3540166rem 16.86676428rem 3.3540166rem 6.94424178rem 2.01107211rem 16.86676428rem 4.51863226rem 7.50734478rem 3.26485219rem 16.86676428rem 3.26485219rem 7.59033933rem;
   grid-template-rows: minmax(10.71919871rem, max-content) 0 0 minmax(16.86676428rem, max-content) 0 0 minmax(1.9774965rem, max-content) minmax(0.00000066rem, max-content) minmax(2.93395537rem, max-content) minmax(13.00593337rem, max-content) 0 0 minmax(10.71919871rem, max-content);
 }
+
+
 
 /* Subtle wipe effect */
 

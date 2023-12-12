@@ -30,6 +30,7 @@ import { AnalyticsValidationPageComponent } from './pages/fiki/analytics-validat
 import { LandingIntroComponent } from './pages/landing-page/landing-intro/landing-intro.component';
 import { LandingTargetMarketComponent } from './pages/landing-page/landing-target-market/landing-target-market.component';
 import { SecondaryFunctionsComponent } from './pages/landing-page/secondary-functions/secondary-functions.component';
+import { LandingProblemSolutionComponent } from './pages/landing-page/landing-problem-solution/landing-problem-solution.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { SecondaryFunctionsComponent } from './pages/landing-page/secondary-func
     LandingIntroComponent,
     LandingTargetMarketComponent,
     SecondaryFunctionsComponent,
+    LandingProblemSolutionComponent,
   ],
     imports: [
         BrowserAnimationsModule,
