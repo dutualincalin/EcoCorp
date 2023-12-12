@@ -35,19 +35,21 @@ export class AnalyticsValidationPageComponent {
 
   post_images : any[] = [
     {
-      src: "./assets/posts-screenshots/",
-      alt:"Facebook Post",
-      title: "<a href=''>Facebook post</a>"
+      src: "./assets/posts-screenshots/Facebook.png",
+      alt:"Facebook Page",
+      title: "Facebook page",
+      link: "https://www.facebook.com/profile.php?id=61553893934922"
     },
     {
-      src: "./assets/posts-screenshots/",
-      alt:"Instagram Post",
-      title: "<a href=''>Instagram post</a>"
+      src: "./assets/posts-screenshots/Instagram.png",
+      alt: "Instagram Page",
+      title: "Instagram page",
+      link: "https://instagram.com/ecocorpmarketplace?igshid=OGQ5ZDc2ODk2ZA=="
     },
     {
-      src: "./assets/posts-screenshots/",
-      alt:"Pinterest Post",
-      title: "<a href=''>Pinterest post</a>"
+      src: "./assets/posts-screenshots/Reclama.jpg",
+      alt: "Ads",
+      title: "Ads"
     },
   ]
 

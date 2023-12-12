@@ -3,7 +3,28 @@
 <div id="analytics-validation-container">
   <h3> Promoting Posts </h3>
   <div id="posts-container">
+    <p-galleria
+      [value]="this.post_images"
+      [showIndicators]="true"
+      [showThumbnails]="false"
+      [changeItemOnIndicatorHover]="true"
+      [responsiveOptions]="responsiveOptions"
+      [containerStyle]="{ 'max-height': '640px' }"
+      [autoPlay]="true"
+      [circular]="true"
+    >
+      <ng-template pTemplate="item" let-item>
+        <img
+          [src]="item.src"
+          [alt]="item.alt"
+          style="height: 55vmin; max-width:100%; display: block;" />
+      </ng-template>
 
+      <ng-template id="caption-blabla" pTemplate="caption" let-item>
+        <a href="{{item.link}}" style="color: azure" *ngIf="item.link"> {{item.title}}</a>
+        <a *ngIf="!item.link"> {{item.title}} </a>
+      </ng-template>
+    </p-galleria>
   </div>
 
   <h3> Landing Page Statistics</h3>
@@ -14,7 +35,7 @@
       [showThumbnails]="false"
       [changeItemOnIndicatorHover]="true"
       [responsiveOptions]="responsiveOptions"
-      [containerStyle]="{ 'max-height': '640px' }"
+      [containerStyle]="{ 'max-height': '720px' }"
       [autoPlay]="true"
       [circular]="true"
     >
