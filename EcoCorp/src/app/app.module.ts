@@ -28,6 +28,8 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import {OverlayPanelModule} from "primeng/overlaypanel";
 import { AnalyticsValidationPageComponent } from './pages/fiki/analytics-validation-page/analytics-validation-page.component';
 import { LandingIntroComponent } from './pages/landing-page/landing-intro/landing-intro.component';
+import { LandingTargetMarketComponent } from './pages/landing-page/landing-target-market/landing-target-market.component';
+import { SecondaryFunctionsComponent } from './pages/landing-page/secondary-functions/secondary-functions.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { LandingIntroComponent } from './pages/landing-page/landing-intro/landin
     LandingPageComponent,
     AnalyticsValidationPageComponent,
     LandingIntroComponent,
+    LandingTargetMarketComponent,
+    SecondaryFunctionsComponent,
   ],
     imports: [
         BrowserAnimationsModule,
