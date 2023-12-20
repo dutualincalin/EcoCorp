@@ -14,7 +14,7 @@ import {CostRevenuePageComponent} from "./pages/fiki/cost-revenue-page/cost-reve
 import {ToolbarModule} from "primeng/toolbar";
 import {SidebarModule} from "primeng/sidebar";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { MarketResearchPageComponent } from './pages/fiki/market-research-page/market-research-page.component';
+import { CustomerDiscoveryPageComponent } from './pages/fiki/customer-discovery-page/customer-discovery-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import {ChartModule} from "primeng/chart";
 import {FieldsetModule} from "primeng/fieldset";
@@ -31,6 +31,8 @@ import { LandingIntroComponent } from './pages/landing-page/landing-intro/landin
 import { LandingTargetMarketComponent } from './pages/landing-page/landing-target-market/landing-target-market.component';
 import { SecondaryFunctionsComponent } from './pages/landing-page/secondary-functions/secondary-functions.component';
 import { LandingProblemSolutionComponent } from './pages/landing-page/landing-problem-solution/landing-problem-solution.component';
+import { MarketResearchPageComponent } from './pages/fiki/market-research-page/market-research-page.component';
+import {TabViewModule} from "primeng/tabview";
 
 @NgModule({
   declarations: [
@@ -41,7 +43,7 @@ import { LandingProblemSolutionComponent } from './pages/landing-page/landing-pr
     CompetitionPageComponent,
     MetricsPageComponent,
     CostRevenuePageComponent,
-    MarketResearchPageComponent,
+    CustomerDiscoveryPageComponent,
     WireframesPageComponent,
     UserExperiencePageComponent,
     FikiComponent,
@@ -51,23 +53,25 @@ import { LandingProblemSolutionComponent } from './pages/landing-page/landing-pr
     LandingTargetMarketComponent,
     SecondaryFunctionsComponent,
     LandingProblemSolutionComponent,
+    MarketResearchPageComponent,
   ],
-    imports: [
-        BrowserAnimationsModule,
-        BrowserModule,
-        ButtonModule,
-        NgOptimizedImage,
-        CardModule,
-        ToolbarModule,
-        SidebarModule,
-        HttpClientModule,
-        ChartModule,
-        FieldsetModule,
-        GalleriaModule,
-        AppRoutingModule,
-        RouterOutlet,
-        OverlayPanelModule
-    ],
+  imports: [
+    BrowserAnimationsModule,
+    BrowserModule,
+    ButtonModule,
+    NgOptimizedImage,
+    CardModule,
+    ToolbarModule,
+    SidebarModule,
+    HttpClientModule,
+    ChartModule,
+    FieldsetModule,
+    GalleriaModule,
+    AppRoutingModule,
+    RouterOutlet,
+    OverlayPanelModule,
+    TabViewModule
+  ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })

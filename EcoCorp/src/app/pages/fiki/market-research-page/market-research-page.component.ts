@@ -1,145 +1,100 @@
-import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import * as XLSX from 'xlsx';
-import {QA} from "../../../model/QA";
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-market-research-page',
   templateUrl: './market-research-page.component.html',
   styleUrls: ['./market-research-page.component.css']
 })
-export class MarketResearchPageComponent implements OnInit{
-  constructor(private http: HttpClient) {}
-
-  clientData: any[] = []
-  businessData: any[] = []
-  clientExcelURL = 'https://docs.google.com/spreadsheets/d/1qX8-imRqy6LinUeY7_O4_qCVm2J_EM6rX2l8wka9sC0/edit#gid=993286460'
-  businessExcelURL = 'https://docs.google.com/spreadsheets/d/10Wx0evRjxgaZS3HZM1-8XxR_mh9TJmrr04t2NPIgCUs/edit?resourcekey#gid=1849580402'
-  colors = [
-    '--blue-500', '--yellow-500', '--green-500', '--red-500', '--primary-900', '--orange-500', '--indigo-500',
-    '--bluegray-500', '--gray-500', '--teal-500'
-  ]
-  QASection: QA[] = [
-    new QA(
-      'How did we discover our customer segment?',
-      'Firstly, there are the companies and in order to find those interested in selling their equipment, we ' +
-      'focused on those that are constantly updating their equipment or that have excess items in their inventory. ' +
-      'It also helped to take a look at the competitors to see what kind of customers they are targeting. Secondly,' +
-      'for the potential buyers, the segment is much wider and less restrictive, since any person can be interested' +
-      'in purchasing resold products.'
-    ),
-
-    new QA(
-      'How did we split our market research?',
-      'There are two courts in this scenario. On the one hand, the perspective of the seller, where we are ' +
-      'interested in his attitude regarding the used equipment, which needs to be replaced. On the other hand, that ' +
-      'of the buyer, where we want to find out if there is interest on the part of the customers regarding the purchase ' +
-      'of used products in a larger number.'
-    ),
-
-    new QA(
-      'How did we suvey people?',
-      'We created two forms, one for individuals and one for legal entities. We are interested to see what the ' +
-      'attitude of the legal entities regarding the disposal of old equipment is, to see if they would use a third-party ' +
-      'to help with reselling it. Also, we are asking the individuals if they use such applications of reselling and ' +
-      'what kind of products they search for.'
-    ),
-
-    new QA(
-      'What did we found after research analysis?',
-      'The survey results indicated a favorable response from both client segments. Most of the potential ' +
-      'sellers like the idea of getting a profit out of equipment they do not use anymore and entrusting a third-party ' +
-      'to take care of the process. The potential clients are also acquainted with such applications and more than ' +
-      'a half would be willing to buy more than a product in order to get a discount.'
-    ),
-
-    new QA(
-      'Is our product ready for selling?',
-      'To conclude, we have positive answers in our surveys that indicate to us that this product is going to ' +
-      'be well received by the market.'
-    )
-  ]
-
-    convertHashMapToData(hashmap: any): any[] {
-    const documentStyle = getComputedStyle(document.documentElement);
-    let dataset: any[] = [];
-
-    Object.entries(hashmap).forEach(([, value]: [string, any]) => {
-      let dataEntry = {
-        question: value.question,
-        data: {
-          labels: [] as string[],
-          datasets: [{
-            data: [] as string[],
-            backgroundColor: [] as string[],
-            hoverBackgroundColor: [] as string[]
-          }]
+export class MarketResearchPageComponent {
+  companies_data = [
+    {
+      name: 'Publi24',
+      img: './assets/Publi24.jpg',
+      data: [
+        {
+          year: 2022,
+          turnover: '29,248,716 RON',
+          netProfit: '11,262,637 RON'
         },
-        options: {
-          responsive: false,
-          maintainAspectRatio: false
+        {
+          year: 2021,
+          turnover: '27,599,473 RON',
+          netProfit: '10,632,626 RON'
+        },
+        {
+          year: 2020,
+          turnover: '24,919,372 RON',
+          netProfit: '7,649,044 RON'
         }
-      }
+      ],
+      marketShare: '10,86%',
+      source: "https://termene.ro/firma/20201084-PUBLI24-DIGITAL-SRL"
+    },
+    {
+      name: 'Olx',
+      img: './assets/Olx.png',
+      data: [
+        {
+          year: 2022,
+          turnover: '249,636,869 RON',
+          netProfit: '71,406,189 RON'
+        },
+        {
+          year: 2021,
+          turnover: '206,510,057 RON',
+          netProfit: '64,368,999 RON'
+        },
+        {
+          year: 2020,
+          turnover: '152,216,544 RON',
+          netProfit: '58,864,496 RON'
+        }
+      ],
+      marketShare: '89.52%',
+      source: "https://termene.ro/firma/22457535-olx-online-services-srl"
+    }
+  ]
 
-      let i = 0
-      Object.entries(value.answers).forEach(([subKey, subValue]: [string, any]) => {
-        dataEntry.data.labels.push(subKey);
-        dataEntry.data.datasets[0].data.push(subValue)
-        dataEntry.data.datasets[0].backgroundColor.push(documentStyle.getPropertyValue(this.colors[i]))
-        dataEntry.data.datasets[0].hoverBackgroundColor.push(documentStyle.getPropertyValue(this.colors[i]))
-        i = (i + 1) % 10
-      })
-
-      dataset.push(dataEntry)
-    })
-
-    return dataset;
-  }
-
-  getAnswersFromExcelSheet(url: string): Promise<any[]> {
-    return new Promise((resolve, reject) => {
-      const sortedAnswers: any = {}
-
-      this.http.get(url, {responseType: 'arraybuffer'}).subscribe({
-        next: (data => {
-          const bufferData = data;
-          const array = new Uint8Array(bufferData);
-          const workbook = XLSX.read(array, {type: 'array'});
-          let jsonData: any = XLSX.utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]]);
-
-          jsonData.forEach((row: {}) => {
-            if ('C' in row) {
-              if (jsonData.indexOf(row) === 0) {
-                Object.entries(row).forEach(([key, value]: [string, any]) => {
-                  if (key !== 'A' && key !== 'B' && key !== '__EMPTY') {
-                    sortedAnswers[key] = {question: value, answers: {}};
-                  }
-                });
-              } else {
-                Object.entries(row).forEach(([key, value]: [string, any]) => {
-                  if (key !== 'A' && key !== 'B' && key !== '__EMPTY') {
-                    sortedAnswers[key].answers.hasOwnProperty(value) ?
-                      sortedAnswers[key].answers[value]++ :
-                      sortedAnswers[key].answers[value] = 1;
-                  }
-                });
-              }
-            }
-          });
-
-          resolve(this.convertHashMapToData(sortedAnswers))
-        }),
-
-        error: ((error) => {
-          console.error('Error fetching Excel file:', error);
-          reject(error)
-        })
-      })
-    })
-  }
-
-  async ngOnInit() {
-    await this.getAnswersFromExcelSheet(this.clientExcelURL).then(data => this.clientData = data)
-    await this.getAnswersFromExcelSheet(this.businessExcelURL).then(data => this.businessData = data)
-  }
+  potentialMarketShare = [
+    {
+      year: 2023,
+      turnover: '31,609,825 RON',
+      netProfit: '12,174,889 RON',
+      marketShare: '10.18%',
+      marketValue: '31,608,432.738 RON',
+      totalMarketValue: '310,495,410 RON'
+    },
+    {
+      year: 2024,
+      turnover: '34,344,080 RON',
+      netProfit: '13,223,204 RON',
+      marketShare: '10.87%',
+      marketValue: '34,304,717.134 RON',
+      totalMarketValue: '315,590,774 RON',
+    },
+    {
+      year: 2025,
+      turnover: '37,362,217 RON',
+      netProfit: '14,353,171 RON',
+      marketShare: '11.63%',
+      marketValue: '38,101,506.456 RON',
+      totalMarketValue: '321,343,166 RON',
+    },
+    {
+      year: 2026,
+      turnover: '40,614,899 RON',
+      netProfit: '15,564,408 RON',
+      marketShare: '12.40%',
+      marketValue: '40.624.134,140 RON',
+      totalMarketValue: '327,613,985 RON',
+    },
+    {
+      year: 2027,
+      turnover: '44,147,804 RON',
+      netProfit: '16,914,164 RON',
+      marketShare: '13.19%',
+      marketValue: '44,107,303.547 RON',
+      totalMarketValue: '334,399,572 RON'
+    },
+  ]
 }
