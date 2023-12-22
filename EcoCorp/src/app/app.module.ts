@@ -33,6 +33,7 @@ import { SecondaryFunctionsComponent } from './pages/landing-page/secondary-func
 import { LandingProblemSolutionComponent } from './pages/landing-page/landing-problem-solution/landing-problem-solution.component';
 import { MarketResearchPageComponent } from './pages/fiki/market-research-page/market-research-page.component';
 import {TabViewModule} from "primeng/tabview";
+import { LandingPrimaryFunctionsComponent } from './pages/landing-page/landing-primary-functions/landing-primary-functions.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import {TabViewModule} from "primeng/tabview";
     SecondaryFunctionsComponent,
     LandingProblemSolutionComponent,
     MarketResearchPageComponent,
+    LandingPrimaryFunctionsComponent,
   ],
   imports: [
     BrowserAnimationsModule,
