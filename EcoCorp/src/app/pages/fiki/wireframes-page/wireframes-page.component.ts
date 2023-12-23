@@ -10,23 +10,23 @@ export class WireframesPageComponent {
   wireframes = [
     {
       title: 'First page',
-      image: './assets/wireframes/Intro.jpg'
+      image: 'assets/fiki-wireframes/Intro.jpg'
     },
     {
       title: 'First page with Login prompt',
-      image: './assets/wireframes/Intro-Login.jpg'
+      image: 'assets/fiki-wireframes/Intro-Login.jpg'
     },
     {
       title: 'Sign-up page',
-      image: './assets/wireframes/Sign-up.jpg'
+      image: 'assets/fiki-wireframes/Sign-up.jpg'
     },
     {
       title: 'Profile page',
-      image: './assets/wireframes/Profile.jpg'
+      image: 'assets/fiki-wireframes/Profile.jpg'
     },
     {
       title: 'Page with products for sale',
-      image: './assets/wireframes/Sales.jpg'
+      image: 'assets/fiki-wireframes/Sales.jpg'
     }
   ]
 
