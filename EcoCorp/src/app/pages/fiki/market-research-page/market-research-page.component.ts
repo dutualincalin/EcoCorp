@@ -9,7 +9,7 @@ export class MarketResearchPageComponent {
   companies_data = [
     {
       name: 'Publi24',
-      img: './assets/Publi24.jpg',
+      img: './assets/fiki-competition/Publi24.jpg',
       data: [
         {
           year: 2022,
@@ -32,7 +32,7 @@ export class MarketResearchPageComponent {
     },
     {
       name: 'Olx',
-      img: './assets/Olx.png',
+      img: './assets/fiki-competition/Olx.png',
       data: [
         {
           year: 2022,

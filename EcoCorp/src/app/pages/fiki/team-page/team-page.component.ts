@@ -12,35 +12,35 @@ export class TeamPageComponent {
       "Tudorache Alina",
       "Project Manager",
       "alina.tudorache872@gmail.com",
-      "assets/PM.jpg"
+      "assets/fiki-team/PM.jpg"
     ),
 
     new Person(
       "Buiciuc Ana-Maria",
       "Software Tester",
       "ana_maria.buiciuc@stud.acs.upb.ro",
-      "assets/Tester.jpg"
+      "assets/fiki-team/Tester.jpg"
     ),
 
     new Person(
       "Iordache Matei",
       "Software Tester",
       "matei.iordache21@gmail.com",
-      "assets/Tester.jpg"
+      "assets/fiki-team/Tester.jpg"
     ),
 
     new Person(
       "Dutu Calin",
       "Software Developer",
       "alin_calin.dutu@stud.acs.upb.ro",
-      "assets/Developer.jpg"
+      "assets/fiki-team/Developer.jpg"
     ),
 
     new Person(
       "Matei Bianca",
       "Software Developer",
       "mateibiancae@gmail.com",
-      "assets/Developer.jpg"
+      "assets/fiki-team/Developer.jpg"
     ),
   ];
 }

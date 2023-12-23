@@ -8,27 +8,27 @@ import { Component } from '@angular/core';
 export class AnalyticsValidationPageComponent {
   report_images: any[] = [
     {
-      src: "./assets/analytics-report/Report_1.png",
+      src: "./assets/fiki-analytics-report/Report_1.png",
       alt: "First measurement"
     },
     {
-      src: "./assets/analytics-report/Report_2.png",
+      src: "./assets/fiki-analytics-report/Report_2.png",
       alt: "Second measurement"
     },
     {
-      src: "./assets/analytics-report/Report_3.png",
+      src: "./assets/fiki-analytics-report/Report_3.png",
       alt: "Third measurement"
     },
     {
-      src: "./assets/analytics-report/Report_4.png",
+      src: "./assets/fiki-analytics-report/Report_4.png",
       alt: "Forth measurement"
     },
     {
-      src: "./assets/analytics-report/Report_5.png",
+      src: "./assets/fiki-analytics-report/Report_5.png",
       alt: "Fifth measurement"
     },
     {
-      src: "./assets/analytics-report/Report_6.png",
+      src: "./assets/fiki-analytics-report/Report_6.png",
       alt: "Sixth measurement"
     },
   ]
