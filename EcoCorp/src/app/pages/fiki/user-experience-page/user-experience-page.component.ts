@@ -32,6 +32,18 @@ export class UserExperiencePageComponent {
     ]
   }
 
+  interviewUserStory = {
+    age: 24,
+    gender: "male",
+    status: "hired, full-time software developer",
+    passions: "entrepreneurship",
+    userStory: new UserStory(
+        1,
+        "His working environment requires the appropriate tools such as a performing desktop, " +
+        "a mobile phone for multitasking, and a fitting desk for his entire setup for a good price."
+    ),
+  }
+
   userStories: UserStory[] = [
     new UserStory(
       1,

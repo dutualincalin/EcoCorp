@@ -40,6 +40,10 @@
   flex-wrap: nowrap;
 }
 
+p-panel {
+  margin-bottom: 10vmax;
+}
+
 #userStoryContainer {
   display: flex;
   flex-direction: row;
