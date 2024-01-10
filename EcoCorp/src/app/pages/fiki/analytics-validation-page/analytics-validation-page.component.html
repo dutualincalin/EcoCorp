@@ -3,6 +3,13 @@
 <div id="analytics-validation-container">
   <h3> Promoting Posts </h3>
   <div id="posts-container">
+    <p style="width: 50%;text-align: center; margin-bottom: 10vmin">
+      <b>
+        For promoting our landing page we created an Instagram and Facebook posting page to share with anyone. In
+        addition, we opted for an ad campaign to further expand our target market.
+      </b>
+    </p>
+
     <p-galleria
       [value]="this.post_images"
       [showIndicators]="true"
@@ -20,7 +27,7 @@
           style="height: 55vmin; max-width:100%; display: block;" />
       </ng-template>
 
-      <ng-template id="caption-blabla" pTemplate="caption" let-item>
+      <ng-template pTemplate="caption" let-item>
         <a href="{{item.link}}" style="color: azure" *ngIf="item.link"> {{item.title}}</a>
         <a *ngIf="!item.link"> {{item.title}} </a>
       </ng-template>
@@ -36,14 +43,17 @@
       [changeItemOnIndicatorHover]="true"
       [responsiveOptions]="responsiveOptions"
       [containerStyle]="{ 'max-height': '720px' }"
-      [autoPlay]="true"
       [circular]="true"
     >
       <ng-template pTemplate="item" let-item>
         <img
           [src]="item.src"
           [alt]="item.alt"
-          style="height: 55vmin; max-width:100%; display: block;" />
+          style="height: 55vmin; max-width:100%; display: block" />
+      </ng-template>
+
+      <ng-template pTemplate="caption" let-item>
+        <a> {{item.text}} </a>
       </ng-template>
     </p-galleria>
   </div>
