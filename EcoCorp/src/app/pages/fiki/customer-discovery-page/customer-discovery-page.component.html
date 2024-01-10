@@ -5,6 +5,10 @@
     <ng-container *ngFor="let QAObject of QASection">
       <p-fieldset legend="{{QAObject.question}}" [toggleable]="true" [collapsed]="true" >
         <p>{{QAObject.answer}}</p>
+        <div *ngIf="QAObject.question === QASection[2].question" id="customer-discovery-posts-container">
+          <p-image src="./assets/posts-screenshots/Facebook_Concept.jpg" alt="Image" width="250" height="200" [preview]="true"></p-image>
+          <p-image src="./assets/posts-screenshots/Reddit_Concept.png" alt="Image" width="250" height="200" [preview]="true"></p-image>
+        </div>
       </p-fieldset>
     </ng-container>
   </div>

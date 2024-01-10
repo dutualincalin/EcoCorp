@@ -35,6 +35,7 @@ import { MarketResearchPageComponent } from './pages/fiki/market-research-page/m
 import {TabViewModule} from "primeng/tabview";
 import { LandingPrimaryFunctionsComponent } from './pages/landing-page/landing-primary-functions/landing-primary-functions.component';
 import { MVPPageComponent } from './pages/fiki/MVP-page/mvp-page/mvp-page.component';
+import {ImageModule} from "primeng/image";
 
 @NgModule({
   declarations: [
@@ -59,23 +60,24 @@ import { MVPPageComponent } from './pages/fiki/MVP-page/mvp-page/mvp-page.compon
     LandingPrimaryFunctionsComponent,
     MVPPageComponent,
   ],
-  imports: [
-    BrowserAnimationsModule,
-    BrowserModule,
-    ButtonModule,
-    NgOptimizedImage,
-    CardModule,
-    ToolbarModule,
-    SidebarModule,
-    HttpClientModule,
-    ChartModule,
-    FieldsetModule,
-    GalleriaModule,
-    AppRoutingModule,
-    RouterOutlet,
-    OverlayPanelModule,
-    TabViewModule
-  ],
+    imports: [
+        BrowserAnimationsModule,
+        BrowserModule,
+        ButtonModule,
+        NgOptimizedImage,
+        CardModule,
+        ToolbarModule,
+        SidebarModule,
+        HttpClientModule,
+        ChartModule,
+        FieldsetModule,
+        GalleriaModule,
+        AppRoutingModule,
+        RouterOutlet,
+        OverlayPanelModule,
+        TabViewModule,
+        ImageModule
+    ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })

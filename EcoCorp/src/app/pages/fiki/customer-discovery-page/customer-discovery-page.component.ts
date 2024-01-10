@@ -39,10 +39,11 @@ export class CustomerDiscoveryPageComponent implements OnInit{
 
     new QA(
       'How did we suvey people?',
-      'We created two forms, one for individuals and one for legal entities. We are interested to see what the ' +
-      'attitude of the legal entities regarding the disposal of old equipment is, to see if they would use a third-party ' +
-      'to help with reselling it. Also, we are asking the individuals if they use such applications of reselling and ' +
-      'what kind of products they search for.'
+      "We created two forms, one for individuals and one for legal entities. To get the opinion of the potential " +
+      "customer segment we decided to use Facebook and Reddit to make the forms public. We are interested to see what the " +
+      "attitude of the legal entities regarding the disposal of old equipment is, and to see if they would use a third " +
+      "party to help with reselling it. Also, we are asking the individuals if they use such applications of reselling, " +
+      "and what kind of products are they searching for."
     ),
 
     new QA(
