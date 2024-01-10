@@ -60,7 +60,7 @@ export class CustomerDiscoveryPageComponent implements OnInit{
     )
   ]
 
-    convertHashMapToData(hashmap: any): any[] {
+  convertHashMapToData(hashmap: any): any[] {
     const documentStyle = getComputedStyle(document.documentElement);
     let dataset: any[] = [];
 

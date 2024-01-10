@@ -22,7 +22,8 @@ export class FikiComponent implements AfterViewInit{
       new ReferenceObject(8, "Wireframes", document.querySelector('#wireframe-container')),
       new ReferenceObject(9, "User Experience", document.querySelector('#UX-container')),
       new ReferenceObject(10, "Analytics Validation", document.querySelector('#analytics-validation-container')),
-      new ReferenceObject(11, "Market Research", document.querySelector('#market-research-container'))
+      new ReferenceObject(11, "Market Research", document.querySelector('#market-research-container')),
+      new ReferenceObject(12, "MVP", document.querySelector('#mvp-container'))
     )
   }
 
