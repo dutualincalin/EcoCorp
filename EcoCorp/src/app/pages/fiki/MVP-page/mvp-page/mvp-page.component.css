@@ -49,3 +49,13 @@ p-card {
     }
   }
 }
+
+#mvp-posts-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
